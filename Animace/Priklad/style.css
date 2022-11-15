@@ -1,5 +1,9 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	padding: 50px;
@@ -11,6 +15,28 @@ body {
 	height: 250px;
 	border-radius: 50%;
 	background-color: #e74c3c;
+
+	animation-name: pohyb;
+	animation-duration: 5s;
+	animation-iteration-count: 10;
+	animation-direction: alternate;
+}
+
+@keyframes pohyb {
+	0% {
+		background-color: #e74c3c;
+		transform: translate(0, 0);
+	}
+
+	50% {
+		background-color: #blueviolet;
+		transform: translate(300px, 300px);
+	}
+
+	100% {
+		background-color: blueviolet;
+		transform: translate(600px, 300px);
+	}
 }
 
 

@@ -8,6 +8,21 @@ body {
 
 /*************************************************/
 
+.odstavec1::first-letter {
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.odstavec2::first-line {
+	color: blueviolet;
+	font-size: 25px;
+}
+h1::after {
+	content: "*";
+	color: red;
+}
+
 /*
 CSS Selektory:
 
